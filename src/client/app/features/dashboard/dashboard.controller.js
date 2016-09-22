@@ -5,10 +5,7 @@
         .module('app.features.dashboard')
         .controller('DashboardController', DashboardController);
 
-    DashboardController.$inject = ['$q', 'logger'];
-    /* @ngInject */
-    function DashboardController($q, logger) {
+    function DashboardController() {
         var vm = this;
-
     }
 })();

@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('app.components', [
-        'app.components.map'
+        'app.components.map',
+        'app.components.dataConsole'
     ]);
 })();
