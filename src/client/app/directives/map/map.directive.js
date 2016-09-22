@@ -2,25 +2,19 @@
     'use strict';
 
     angular
-        .module('app.components.map')
+        .module('app.directives.map')
         .directive('map', mapDirective);
 
     function mapDirective() {
         return {
             restrict: 'E',
-            templateUrl: 'app/components/map/map.html',
+            templateUrl: 'app/directives/map/map.html',
             scope: {},
-            controller: MapController,
-            controllerAs: 'vm',
-            bindToController: true
+            link: linkFunction,
         };
     }
 
-    MapController.$inject = [];
-
-    function MapController() {
-        var vm = this;
-
+    function linkFunction(scope, element, attrs) {
         vm.map = { center: { latitude: 37.384032, longitude: -122.067385 }, zoom: 8 };
     }
 

@@ -6,7 +6,8 @@
         'app.widgets',
         'app.features',
         'app.components',
-        'app.layout'
+        'app.layout',
+        'app.services'
     ]);
 
 })();

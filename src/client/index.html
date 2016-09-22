@@ -13,7 +13,8 @@
     <base href="/">
 
     <!-- let google maps load before hand -->
-    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZUrojUwWQEjKGe3MOK6ZCF8vblhSI0Cs&callback=initMap"
+    async defer></script>
 
     <!-- build:css styles/lib.css -->
     <!-- bower:css -->
@@ -53,14 +54,6 @@
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/toastr/toastr.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.js"></script>
-    <script src="/bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
-    <script src="/bower_components/lodash/lodash.js"></script>
-    <script src="/bower_components/markerclustererplus/src/markerclusterer.js"></script>
-    <script src="/bower_components/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js"></script>
-    <script src="/bower_components/google-maps-utility-library-v3-infobox/dist/infobox.js"></script>
-    <script src="/bower_components/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js"></script>
-    <script src="/bower_components/js-rich-marker/src/richmarker.js"></script>
-    <script src="/bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -73,9 +66,12 @@
     <script src="/src/client/app/components/app.components.module.js"></script>
     <script src="/src/client/app/components/map/map.module.js"></script>
     <script src="/src/client/app/core/core.module.js"></script>
+    <script src="/src/client/app/directives/app.directives.module.js"></script>
+    <script src="/src/client/app/directives/map/map.module.js"></script>
     <script src="/src/client/app/features/app.features.module.js"></script>
     <script src="/src/client/app/features/dashboard/dashboard.module.js"></script>
     <script src="/src/client/app/layout/layout.module.js"></script>
+    <script src="/src/client/app/services/services.module.js"></script>
     <script src="/src/client/app/widgets/widgets.module.js"></script>
     <script src="/src/client/app/blocks/exception/exception-handler.provider.js"></script>
     <script src="/src/client/app/blocks/exception/exception.js"></script>
@@ -86,10 +82,13 @@
     <script src="/src/client/app/core/constants.js"></script>
     <script src="/src/client/app/core/core.route.js"></script>
     <script src="/src/client/app/core/dataservice.js"></script>
+    <script src="/src/client/app/directives/map/map.directive.js"></script>
     <script src="/src/client/app/features/dashboard/dashboard.controller.js"></script>
     <script src="/src/client/app/features/dashboard/dashboard.route.js"></script>
     <script src="/src/client/app/layout/ht-top-nav.directive.js"></script>
     <script src="/src/client/app/layout/shell.controller.js"></script>
+    <script src="/src/client/app/services/firebase.service.js"></script>
+    <script src="/src/client/app/services/map.service.js"></script>
     <script src="/src/client/app/widgets/ht-img-person.directive.js"></script>
     <script src="/src/client/app/widgets/ht-widget-header.directive.js"></script>
     <!-- endinject -->
