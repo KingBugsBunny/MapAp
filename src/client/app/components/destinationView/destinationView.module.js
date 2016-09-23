@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app.components.map', [
+    angular.module('app.components.destinationView', [
         'app.services'
     ]);
 })();

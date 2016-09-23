@@ -3,6 +3,7 @@
 
     angular.module('app.components', [
         'app.components.map',
-        'app.components.dataConsole'
+        'app.components.destinationView',
+        'app.services'
     ]);
 })();
