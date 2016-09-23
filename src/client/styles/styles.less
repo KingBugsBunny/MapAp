@@ -25,33 +25,53 @@
 }
 
 body {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 23px;
     color: #000000;
     background: @color_insite_off_White;
     -webkit-font-smoothing: antialiased;
+    margin-bottom: 14px;
 }
 
-.navbar {
+//navbar padding
+body > .container {
+    padding-top: 60px;
+}
 
+//center navbar
+.navbar-nav {
+    text-align:center;
+    float:none;
+}
+.navbar-nav li {
+    display:inline-block;
+    float:none;
+}
+
+
+.bold {
+    font-weight: 700;
 }
 
 .semi-bold {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .destinationView {
     background: @color_insite_light_gray;
 }
 
+//Button options
 .btn-primary {
     background: @color_insite_dark_gray;
     border-color: @color_insite_dark_gray;
+
 }
 
 .btn-info {
     background: @color_insite_ios;
     border-color: @color_insite_ios;
+
 }
 
 .btn-primary:hover {
@@ -74,17 +94,39 @@ body {
     border-color: lighten(@color_insite_ios, 20%);
 }
 
+//Insite Fonts
 .insite-font-black {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
     color: black
 }
 
 .insite-font-white {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: @color_insite_off_White
 }
 
+p {
+    margin: 0;
+}
+
+.valueText {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.textSpacing {
+    padding: 8px 8px 8px 8px;
+}
+
+.userNameText {
+    font-size: 14px;
+}
+
+.map {
+    width: 100%;
+    height: 225px;
+}
 
 
