@@ -1,10 +1,10 @@
-(function(){
-	'use strict';
+(function () {
+    'use strict';
 
-	angular.module('app.services')
-		.factory('FireBaseService', FireBaseService);
+    angular.module('app.services')
+        .factory('FireBaseService', FireBaseService);
 
-	function FireBaseService(){
+    function FireBaseService() {
 
-	}
+    }
 })();

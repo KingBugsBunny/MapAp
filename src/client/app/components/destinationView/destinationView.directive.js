@@ -24,17 +24,17 @@
 
         function init() {
             vm.user = {
-                username : 'BRABRABRABRABRA',
-                eta : '20 minutes',
-                destination : 'Eric Andre\'s house'
+                username: 'Joe Nobody',
+                eta: '20 minutes',
+                destination: 'Eric Andre\'s house'
             };
 
             vm.getFirebaseData();
         }
 
-       function getFirebaseData() {
-           //TODO: add service calls
-       }
+        function getFirebaseData() {
+            //TODO: add service calls
+        }
     }
 })();
 

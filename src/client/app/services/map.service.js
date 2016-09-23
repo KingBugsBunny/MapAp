@@ -1,10 +1,10 @@
-(function(){
-	'use strict';
+(function () {
+    'use strict';
 
-	angular.module('app.services')
-		.factory('MapService', MapService);
+    angular.module('app.services')
+        .factory('MapService', MapService);
 
-	function MapService(){
+    function MapService() {
 
-	}
+    }
 })();

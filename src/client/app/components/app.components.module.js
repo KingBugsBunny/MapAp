@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('app.components', [
-        'app.components.map',
+        'app.components.mapView',
         'app.components.destinationView',
         'app.services'
     ]);

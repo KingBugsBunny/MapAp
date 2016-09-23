@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
     <base href="/">
 
-    <!-- let google maps load before hand -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZUrojUwWQEjKGe3MOK6ZCF8vblhSI0Cs"></script>
+    <!-- google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRZ02AErOWo9quP_MvnOfdoLXlQUkCmds"></script>
 
     <!-- build:css styles/lib.css -->
     <!-- bower:css -->
@@ -53,6 +53,7 @@
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/toastr/toastr.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/ngmap/build/scripts/ng-map.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -64,10 +65,9 @@
     <script src="/src/client/app/blocks/router/router.module.js"></script>
     <script src="/src/client/app/components/app.components.module.js"></script>
     <script src="/src/client/app/components/destinationView/destinationView.module.js"></script>
-    <script src="/src/client/app/components/map/map.module.js"></script>
+    <script src="/src/client/app/components/mapView/mapView.module.js"></script>
+    <script src="/src/client/app/components/mapView/ngMap/ngMap.module.js"></script>
     <script src="/src/client/app/core/core.module.js"></script>
-    <script src="/src/client/app/directives/app.directives.module.js"></script>
-    <script src="/src/client/app/directives/map/map.module.js"></script>
     <script src="/src/client/app/features/app.features.module.js"></script>
     <script src="/src/client/app/features/dashboard/dashboard.module.js"></script>
     <script src="/src/client/app/layout/layout.module.js"></script>
@@ -78,12 +78,12 @@
     <script src="/src/client/app/blocks/logger/logger.js"></script>
     <script src="/src/client/app/blocks/router/router-helper.provider.js"></script>
     <script src="/src/client/app/components/destinationView/destinationView.directive.js"></script>
-    <script src="/src/client/app/components/map/map.directive.js"></script>
+    <script src="/src/client/app/components/mapView/mapView.controller.js"></script>
+    <script src="/src/client/app/components/mapView/ngMap/ngMap.controller.js"></script>
     <script src="/src/client/app/core/config.js"></script>
     <script src="/src/client/app/core/constants.js"></script>
     <script src="/src/client/app/core/core.route.js"></script>
     <script src="/src/client/app/core/dataservice.js"></script>
-    <script src="/src/client/app/directives/map/map.directive.js"></script>
     <script src="/src/client/app/features/dashboard/dashboard.controller.js"></script>
     <script src="/src/client/app/features/dashboard/dashboard.route.js"></script>
     <script src="/src/client/app/layout/footer.controller.js"></script>

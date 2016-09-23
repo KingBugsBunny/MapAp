@@ -13,9 +13,7 @@
         vm.isBusy = true;
         $rootScope.showSplash = true;
         vm.navline = {
-            title: config.appTitle,
-            text: 'Created by Robert Caw Brush',
-            link: 'http://twitter.com/brushingMyBrush'
+            title: config.appTitle
         };
 
         activate();
