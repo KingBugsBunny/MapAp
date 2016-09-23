@@ -13,8 +13,8 @@
     }
 
     var config = {
-        appErrorPrefix: '[angularPractice Error] ',
-        appTitle: 'angularPractice'
+        appErrorPrefix: '[MapAp Error] ',
+        appTitle: 'MapAp'
     };
 
     core.value('config', config);

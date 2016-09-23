@@ -29,7 +29,6 @@
                 destination : 'Eric Andre\'s house'
             };
 
-            console.log('I RAN');
             vm.getFirebaseData();
         }
 

@@ -21,7 +21,7 @@
     function MapController() {
         var vm = this;
 
-        //Sunny valley
+        //Sunnyvale
         vm.map = { center: { latitude: 37.384032, longitude: -122.067385 }, zoom: 8 };
     }
 
