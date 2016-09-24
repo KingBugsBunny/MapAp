@@ -1,1 +1,7 @@
-<map class="map" center="{{vm.map.center}}" zoom="{{vm.map.zoom}}"></map>
+<map class="map" center="{{vm.map.center}}" zoom="{{vm.map.zoom}}" ng-init="vm.init()">
+    <directions
+        travel-mode="{{vm.map.travelMode}}"
+        origin="{{vm.map.origin}}"
+        destination="{{vm.map.destination}}"
+        ></directions>
+</map>

@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('app.components.destinationView', [
-        'app.services'
+        'app.services',
+        'blocks.logger'
     ]);
 })();

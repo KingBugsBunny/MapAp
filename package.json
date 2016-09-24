@@ -9,6 +9,7 @@
     "test": "gulp test"
   },
   "dependencies": {
+    "angularfire": "^2.0.2",
     "body-parser": "^1.8.2",
     "bower": "^1.7.9",
     "express": "^4.9.3",

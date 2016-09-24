@@ -3,6 +3,6 @@
 
     angular.module('app.components.mapView', [
         'app.services',
-        'app.components.mapView.ngMap'
+        'ngMap'
     ]);
 })();

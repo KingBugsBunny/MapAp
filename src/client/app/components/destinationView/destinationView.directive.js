@@ -16,24 +16,26 @@
         };
     }
 
-    function DestinationViewController() {
+    DestinationViewController.$inject = ['FireBaseService', 'logger'];
+
+    function DestinationViewController(FireBaseService, logger) {
         var vm = this;
 
         vm.init = init;
         vm.getFirebaseData = getFirebaseData;
 
         function init() {
-            vm.user = {
-                username: 'Joe Nobody',
-                eta: '20 minutes',
-                destination: 'Eric Andre\'s house'
-            };
 
             vm.getFirebaseData();
+
         }
 
         function getFirebaseData() {
-            //TODO: add service calls
+
+            var data = FireBaseService.load()
+            vm.user = data.user;
+
+            console.log(vm.user);
         }
     }
 })();

@@ -7,6 +7,7 @@
         'app.features',
         'app.components',
         'app.layout',
-        'app.services'
+        'app.services',
+        'firebase'
     ]);
 })();
