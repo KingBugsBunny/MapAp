@@ -16,26 +16,39 @@
         };
     }
 
-    MapViewController.$inject = ['$scope'];
+    MapViewController.$inject = ['$scope', '$firebaseObject', 'FIREBASE_URL', 'NgMap'];
 
-    function MapViewController($scope) {
+    function MapViewController($scope, $firebaseObject, FIREBASE_URL, NgMap) {
         var vm = this;
 
+        var ref = new Firebase(FIREBASE_URL);
 
         vm.init = init;
+        vm.setData = setData;
 
         function init() {
-            vm.map = {
-                center : [37.775049, -122.354518],
-                zoom : 2,
-                travelMode: 'DRIVING',
-                origin:  [37.779095, -122.390353],
-                destination: [37.803773, -122.271539],
-                wayPoints: []
-            };
+            var ref = new Firebase(FIREBASE_URL);
+
+            vm.map = $firebaseObject(ref.child('user'));
+
+
+            vm.map.username = 'Tom Cruise';
+            vm.map.eta = 20;
+            vm.map.zoom = 2;
+            vm.map.travelMode = 'DRIVING';
+            vm.map.origin = [37.779095, -122.390353];
+            vm.map.destination = [37.803773, -122.271539];
+
+            vm.setData();
         }
 
-        //TODO: save map data to FB
+        $scope.$watch('ngMap', function(newValue, oldValue) {
+
+        });
+
+        function setData() {
+            vm.map.$save();
+        }
     }
 })();
 

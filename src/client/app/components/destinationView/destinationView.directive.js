@@ -30,9 +30,8 @@
         function init() {
 
             vm.getUserData();
-
         }
-        //TODO: load userData from FB
+
         function getUserData() {
             vm.user = $firebaseObject(ref.child('user'));
         }
