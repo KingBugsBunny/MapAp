@@ -16,26 +16,25 @@
         };
     }
 
-    DestinationViewController.$inject = ['FireBaseService', 'logger'];
+    DestinationViewController.$inject = ['$firebaseObject', 'FIREBASE_URL'];
 
-    function DestinationViewController(FireBaseService, logger) {
+    function DestinationViewController($firebaseObject, FIREBASE_URL) {
         var vm = this;
 
+        var ref = new Firebase(FIREBASE_URL);
+
         vm.init = init;
-        vm.getFirebaseData = getFirebaseData;
+
+        vm.getUserData = getUserData;
 
         function init() {
 
-            vm.getFirebaseData();
+            vm.getUserData();
 
         }
-
-        function getFirebaseData() {
-
-            var data = FireBaseService.load()
-            vm.user = data.user;
-
-            console.log(vm.user);
+        //TODO: load userData from FB
+        function getUserData() {
+            vm.user = $firebaseObject(ref.child('user'));
         }
     }
 })();

@@ -5,5 +5,6 @@
     angular
         .module('app.core')
         .constant('toastr', toastr)
-        .constant('moment', moment);
+        .constant('moment', moment)
+        .constant('FIREBASE_URL', 'https://mapap-ff943.firebaseio.com/');
 })();
