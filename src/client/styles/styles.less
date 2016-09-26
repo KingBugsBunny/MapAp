@@ -24,6 +24,7 @@
     /*font-weight: 400;*/
 }
 
+
 body {
     font-size: 16px;
     line-height: 23px;
@@ -61,7 +62,16 @@ body > .container {
     background: @color_insite_light_gray;
 }
 
+.headerColor {
+    background: black;
+    color: @color_insite_off_White;
+}
+
 //Button options
+.btn {
+    margin: 5px;
+}
+
 .btn-primary {
     background: @color_insite_dark_gray;
     border-color: @color_insite_dark_gray;
@@ -104,7 +114,7 @@ body > .container {
 .insite-font-white {
     font-size: 16px;
     font-weight: 400;
-    color: @color_insite_off_White
+    color: @color_insite_off_White;
 }
 
 p {
@@ -129,4 +139,63 @@ p {
     height: 225px;
 }
 
+.download {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
 
+.nopadding {
+    padding: 0 !important;
+}
+
+//force portrait on mobile
+@media (max-device-width: 740px) and (orientation: landscape) {
+    .portrait-mobile {
+        display:block;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        min-width:460px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+    div[class^="col"]{
+        padding: 8px 8px;
+    }
+
+    .map {
+        height: 330px;
+    }
+
+    .download {
+        font-size: 24px;
+        padding-bottom: 2px;
+    }
+
+    .btn {
+        width: 300px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)
+{
+    div[class^="col"]{
+        padding: 10px 10px;
+    }
+
+    .map {
+        height: 400px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)
+{
+
+}

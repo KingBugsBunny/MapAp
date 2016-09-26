@@ -1,5 +1,8 @@
 <div ng-controller="ShellController as vm">
-    <section id="content" class="content">
+    <nav class="navbar navbar-default headerColor hidden-xs hidden-sm hidden-md">
+        <header></header>
+    </nav>
+    <section id="content" class="content portrait-mobile">
         <!--Render routes( NG_VIEW ) -->
         <div ui-view class="shuffle-animation"></div>
         <div ngplus-overlay
@@ -12,7 +15,7 @@
         </div>
         <div class="row">
             <section class="navbar navbar-center navbar-fixed-bottom">
-                    <footer></footer>
+                <footer></footer>
             </section>
         </div>
     </section>

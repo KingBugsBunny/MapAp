@@ -11,15 +11,11 @@
             restrict: 'E',
             templateUrl: 'app/layout/footer.html',
             scope: {},
-            controller: FooterController,
-            controllerAs: 'vm',
-            bindToController: true
+            controller: LinkFunction
         };
 
         /* @ngInject */
-        function FooterController() {
-            var vm = this;
-
+        function LinkFunction() {
         }
     }
 })();

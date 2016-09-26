@@ -12,9 +12,6 @@
         vm.busyMessage = 'Please wait ...';
         vm.isBusy = true;
         $rootScope.showSplash = true;
-        vm.navline = {
-            title: config.appTitle
-        };
 
         activate();
 
