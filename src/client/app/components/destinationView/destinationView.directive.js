@@ -28,7 +28,6 @@
         vm.getUserData = getUserData;
 
         function init() {
-
             vm.getUserData();
         }
 

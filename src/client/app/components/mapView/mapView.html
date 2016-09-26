@@ -1,8 +1,12 @@
-<map class="map" center="{{vm.map.center}}" zoom="{{vm.map.zoom}}" ng-init="vm.init()">
+<ng-map class="map" center="{{vm.user.center}}" zoom="{{vm.user.zoom}}" ng-init="vm.init()">
     <directions
         draggable="true"
-        travel-mode="{{vm.map.travelMode}}"
-        origin="{{vm.map.origin}}"
-        destination="{{vm.map.destination}}"
-        ></directions>
-</map>
+        travel-mode="{{vm.user.travelMode}}"
+        origin="{{vm.user.origin}}"
+        destination="{{vm.user.destination}}"
+        on-dragend="vm.dragStart()"
+        on-click="vm.clicked()"
+        >
+        <marker on-click="vm.clicked()"></marker>
+        </directions>
+</ng-map>

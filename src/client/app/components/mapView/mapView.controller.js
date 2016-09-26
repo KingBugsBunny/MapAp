@@ -25,29 +25,56 @@
 
         vm.init = init;
         vm.setData = setData;
+        vm.dragStart = dragStart;
+        vm.clicked = clicked;
 
         function init() {
             var ref = new Firebase(FIREBASE_URL);
 
-            vm.map = $firebaseObject(ref.child('user'));
+            vm.user = $firebaseObject(ref.child('user'));
 
 
-            vm.map.username = 'Tom Cruise';
-            vm.map.eta = 20;
-            vm.map.zoom = 2;
-            vm.map.travelMode = 'DRIVING';
-            vm.map.origin = [37.779095, -122.390353];
-            vm.map.destination = [37.803773, -122.271539];
 
-            vm.setData();
+            NgMap.getMap().then(function(map) {
+                console.log(map.directionsRenderers[0]);
+
+                //actual map
+                vm.map = map;
+
+                //vm.user.origin = map.directionsRenderers[0].origin;
+                //vm.user.destination = map.directionsRenderers[0].directions.routes[0].legs[0].end_location.end_location;
+
+
+
+            }).then(function(){
+                vm.map.addListener('mouseup', function(event){
+                    NgMap.getMap().then(function(map) {
+                        var legs = map.directionsRenderers[0].directions.routes[0].legs[0];
+
+                        vm.user.username = 'Tom Cruise';
+                        vm.user.eta = legs.duration.text + ' away';
+                        vm.user.origin = legs.start_address;
+                        vm.user.destination = legs.end_address;
+                        setData();
+                    });
+                });
+            });
+
+
+
         }
 
-        $scope.$watch('ngMap', function(newValue, oldValue) {
-
-        });
-
         function setData() {
-            vm.map.$save();
+            vm.user.$save();
+        }
+
+        function dragStart() {
+            console.log('drag fired');
+        }
+
+        function clicked () {
+            console.log('click fired');
+
         }
     }
 })();

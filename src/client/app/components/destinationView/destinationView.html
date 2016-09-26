@@ -7,15 +7,16 @@
             <p class="text-center">
                 <b>ETA</b>
             </p>
-            <p class="text-center text-offset valueText" ng-bind=" vm.user.eta + ' minutes'"></p>
+            <p class="text-center text-offset valueText" ng-bind="vm.user.eta"></p>
         </div>
-    </div>
-    <div class="row">
-        <div class="textSpacing">
-            <p class="text-center">
-                <b>Destination</b>
-            </p>
-            <p class="text-center valueText" ng-bind="vm.user.destination"></p>
+        <div class="row">
+            <div class="textSpacing">
+                <p class="text-center">
+                    <b>Destination</b>
+                </p>
+
+                <p class="text-center valueText" ng-bind="vm.user.destination"></p>
+            </div>
         </div>
     </div>
 </section>
