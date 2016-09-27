@@ -4,7 +4,7 @@
     angular.module('app.components', [
         'app.components.mapView',
         'app.components.destinationView',
-        'app.services',
+        'blocks.logger',
         'firebase'
     ]);
 })();

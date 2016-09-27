@@ -34,28 +34,8 @@ body {
     margin-bottom: 14px;
 }
 
-//navbar padding
-body > .container {
-    padding-top: 60px;
-}
-
-//center navbar
-.navbar-nav {
-    text-align:center;
-    float:none;
-}
-.navbar-nav li {
-    display:inline-block;
-    float:none;
-}
-
-
 .bold {
     font-weight: 700;
-}
-
-.semi-bold {
-    font-weight: 500;
 }
 
 .destinationView {
@@ -67,9 +47,30 @@ body > .container {
     color: @color_insite_off_White;
 }
 
+//navbar padding
+body > .container {
+    padding-top: 60px;
+}
+
+//center navbar
+.navbar-nav {
+    text-align:center;
+    float:none;
+}
+.navbar-nav a {
+    display:inline-block;
+    float:none;
+}
+
+
 //Button options
 .btn {
     margin: 5px;
+    border-radius: 3px;
+}
+
+a[class^="col"] {
+   padding : 0 !important;
 }
 
 .btn-primary {
@@ -113,7 +114,6 @@ body > .container {
 
 .insite-font-white {
     font-size: 16px;
-    font-weight: 400;
     color: @color_insite_off_White;
 }
 
@@ -136,7 +136,7 @@ p {
 
 .map {
     width: 100%;
-    height: 225px;
+    height: 200px;
 }
 
 .download {
@@ -148,18 +148,6 @@ p {
     padding: 0 !important;
 }
 
-//force portrait on mobile
-@media (max-device-width: 740px) and (orientation: landscape) {
-    .portrait-mobile {
-        display:block;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        min-width:460px;
-    }
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)
@@ -177,8 +165,15 @@ p {
         padding-bottom: 2px;
     }
 
-    .btn {
+    div[class^="col"] > a{
         width: 300px;
+    }
+
+}
+
+@media (min-width: 0) {
+    div[class^="col"] > a {
+        margin: 0 0 0 0;
     }
 }
 
@@ -188,6 +183,8 @@ p {
     div[class^="col"]{
         padding: 10px 10px;
     }
+
+
 
     .map {
         height: 400px;
