@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "body-parser": "^1.8.2",
+        "browser-sync": "^2.7.13",
         "bower": "^1.7.9",
         "express": "^4.9.3",
         "morgan": "^1.1.1",
@@ -19,7 +20,6 @@
         "wiredep": "^2.2.2"
     },
     "devDependencies": {
-        "browser-sync": "^2.7.13",
         "chai": "^3.1.0",
         "chai-as-promised": "^5.1.0",
         "chalk": "^1.1.0",
