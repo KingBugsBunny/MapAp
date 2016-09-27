@@ -1,1 +1,15 @@
-John Papa's Hottowel boiler plate refactored into features/components for an easy transistion into Angular 2.0
+# MapAp
+
+angular 1.5 application made with google maps and firebase. 
+
+<h2>To Install</h2>
+
+`npm install`
+
+should run npm install and then bower install.
+
+<h2> Serve app </h2>
+
+run app 
+`gulp serve-dev`
+
