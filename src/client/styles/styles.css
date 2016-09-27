@@ -1,0 +1,136 @@
+* {
+  /*-webkit-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    box-shadow: none !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+    -webkit-text-shadow: none !important;
+    -ms-text-shadow: none !important;
+    text-shadow: none !important;*/
+  font-family: "Reunion", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /*font-weight: 400;*/
+}
+body {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  background: #fff9fd;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 14px;
+}
+.bold {
+  font-weight: 700;
+}
+.destinationView {
+  background: #c8c8c8;
+}
+.headerColor {
+  background: black;
+  color: #fff9fd;
+}
+body > .container {
+  padding-top: 60px;
+}
+.navbar-nav {
+  text-align: center;
+  float: none;
+}
+.navbar-nav a {
+  display: inline-block;
+  float: none;
+}
+.btn {
+  margin: 5px;
+  border-radius: 3px;
+}
+a[class^="col"] {
+  padding: 0 !important;
+}
+.btn-primary {
+  background: #9b9b9b;
+  border-color: #9b9b9b;
+}
+.btn-info {
+  background: #f55a9e;
+  border-color: #f55a9e;
+}
+.btn-primary:hover {
+  background: #cecece;
+  border-color: #cecece;
+}
+.btn-info:hover {
+  background: #fbbad7;
+  border-color: #fbbad7;
+}
+.btn-primary:active:hover {
+  background: #cecece;
+  border-color: #cecece;
+}
+.btn-info:active:hover {
+  background: #fbbad7;
+  border-color: #fbbad7;
+}
+.insite-font-black {
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+}
+.insite-font-white {
+  font-size: 16px;
+  color: #fff9fd;
+}
+p {
+  margin: 0;
+}
+.valueText {
+  font-size: 12px;
+  font-weight: 400;
+}
+.textSpacing {
+  padding: 8px 8px 8px 8px;
+}
+.userNameText {
+  font-size: 14px;
+}
+.map {
+  width: 100%;
+  height: 200px;
+}
+.download {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.nopadding {
+  padding: 0 !important;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  div[class^="col"] {
+    padding: 8px 8px;
+  }
+  .map {
+    height: 330px;
+  }
+  .download {
+    font-size: 24px;
+    padding-bottom: 2px;
+  }
+  div[class^="col"] > a {
+    width: 300px;
+  }
+}
+@media (min-width: 0) {
+  div[class^="col"] > a {
+    margin: 0 0 0 0;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  div[class^="col"] {
+    padding: 10px 10px;
+  }
+  .map {
+    height: 400px;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
