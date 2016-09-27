@@ -1,6 +1,7 @@
 # MapAp
 
 angular 1.5 application made with google maps and firebase. 
+The app is hoseted on herkou and can be [found here](https://robertcawbrush-mapap.herokuapp.com/)
 
 <h2>To Install</h2>
 
@@ -12,4 +13,5 @@ should run npm install and then bower install.
 
 run app 
 `gulp serve-dev`
+
 
